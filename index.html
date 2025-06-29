@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+<!--
+      _______  _____  __________ _____   ___  _______
+     / ___/ / / / _ )/ __/ __/ // / _ | / _ \/ __/ _ \
+    / /__/ /_/ / _  / _/_\ \/ _  / __ |/ ___/ _// // /
+    \___/\____/____/___/___/_//_/_/ |_/_/  /___/____/
+
+  -->
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>Cube Shaped Gameworks</title>
 
-  <!-- 1-line Font Awesome CDN (free kit) -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -14,64 +21,60 @@
   />
 
   <style>
-    /* Full-viewport flexbox: everything else nests inside */
     html, body {
       height: 100%;
       margin: 0;
       background-color: black;
     }
+
     .wrapper {
       display: flex;
-      justify-content: center;      /* horizontal centring */
-      align-items: center;          /* vertical centring   */
+      justify-content: center;
+      align-items: center;
       height: 100%;
     }
 
-    /* Stack the image and icons vertically, centred */
     .content {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 1.2rem;                  /* space between image & icons */
+      gap: 1.2rem;
     }
 
-    /* Make the image responsive */
-    img {
-      width: 300px;
+    .logo {
+      width: 350px;
     }
 
-    /* --- Social-icon styling --- */
     .social-icons {
       display: flex;
-      gap: 1.2rem;                  /* spacing between icons */
-      font-size: 1.6rem;            /* icon size */
+      gap: 4.2rem;
+      font-size: 1.6rem;
+      margin-top: 20px;
     }
 
-    /* Base style */
     .social-icons a {
       color: #555;
       text-decoration: none;
-      transition: color 0.35s ease; /* smooth fade */
+      transition: color 0.25s ease;
     }
 
-    /* Brand hover colours */
-    .social-icons a.twitter:hover  { color: #1DA1F2; }
-    .social-icons a.facebook:hover { color: #1877F2; }
-    .social-icons a.instagram:hover{ color: #E1306C; }
-    .social-icons a.linkedin:hover { color: #0A66C2; }
-    .social-icons a.threads:hover { color: #ffffff; }
+    .social-icons a.twitter:hover   { color: #1DA1F2; }
+    .social-icons a.facebook:hover  { color: #1877F2; }
+    .social-icons a.instagram:hover { color: #E1306C; }
+    .social-icons a.linkedin:hover  { color: #0A66C2; }
+    .social-icons a.threads:hover   { color: #ffffff; }
   </style>
 </head>
 <body>
   <div class="wrapper">
     <div class="content">
-      <img src="logohero.png" alt="Logo">
+      <img src="logohero.png" class="logo" alt="Logo">
 
       <div class="social-icons">
         <a class="twitter"   href="https://x.com/cubeshapedgames"   aria-label="X"><i class="fab fa-twitter"></i></a>
         <a class="facebook"  href="https://www.facebook.com/profile.php?id=61577663051579"     aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
         <a class="instagram" href="https://www.instagram.com/cubeshapedgames/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a class="threads"  href="https://www.threads.com/@cubeshapedgames"  aria-label="Threads"><i class="fab fa-threads-in"></i></a>
+        <a class="threads"  href="https://www.threads.com/@cubeshapedgames"  aria-label="Threads"><i class="fab fa-threads"></i></a>
       </div>
     </div>
   </div>
