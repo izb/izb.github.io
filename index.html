@@ -1,3 +1,79 @@
-<html>
-    Hello.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cube Shaped Gameworks</title>
+
+  <!-- 1-line Font Awesome CDN (free kit) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-KyZXEAg3QhqLMpG8r+Knujsl5/...REPLACE_WITH_CURRENT_HASH..."
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <style>
+    /* Full-viewport flexbox: everything else nests inside */
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    .wrapper {
+      display: flex;
+      justify-content: center;      /* horizontal centring */
+      align-items: center;          /* vertical centring   */
+      height: 100%;
+    }
+
+    /* Stack the image and icons vertically, centred */
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;                  /* space between image & icons */
+    }
+
+    /* Make the image responsive */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* --- Social-icon styling --- */
+    .social-icons {
+      display: flex;
+      gap: 1.2rem;                  /* spacing between icons */
+      font-size: 1.6rem;            /* icon size */
+    }
+
+    /* Base style */
+    .social-icons a {
+      color: #555;
+      text-decoration: none;
+      transition: color 0.35s ease; /* smooth fade */
+    }
+
+    /* Brand hover colours */
+    .social-icons a.twitter:hover  { color: #1DA1F2; }
+    .social-icons a.facebook:hover { color: #1877F2; }
+    .social-icons a.instagram:hover{ color: #E1306C; }
+    .social-icons a.linkedin:hover { color: #0A66C2; }
+    .social-icons a.threads:hover { color: #ffffff; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <img src="logohero.png" alt="Logo">
+
+      <div class="social-icons">
+        <a class="twitter"   href="https://x.com/cubeshapedgames"   aria-label="X"><i class="fab fa-twitter"></i></a>
+        <a class="facebook"  href="https://www.facebook.com/profile.php?id=61577663051579"     aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a class="instagram" href="https://www.instagram.com/cubeshapedgames/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a class="threads"  href="https://www.threads.com/@cubeshapedgames"  aria-label="Threads"><i class="fab fa-threads-in"></i></a>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
